@@ -1,0 +1,160 @@
+{
+  "users": [
+    {
+      "id": "u1",
+      "identifier": "guest@gmail.com",
+      "name": "Guest User",
+      "role": "user"
+    },
+    {
+      "id": "u2",
+      "identifier": "+15550000000",
+      "name": "Mobile User",
+      "role": "user"
+    },
+    {
+      "id": "a1",
+      "identifier": "admin",
+      "name": "Facility Manager",
+      "role": "admin"
+    }
+  ],
+  "slots": [
+    {
+      "id": "B2-A12",
+      "floor": "B2",
+      "zone": "A",
+      "slot_number": "12",
+      "status": "available",
+      "instructions": [
+        "Head straight 50m",
+        "Turn left at Blue pillar",
+        "Slot is on the right"
+      ]
+    },
+    {
+      "id": "B1-C05",
+      "floor": "B1",
+      "zone": "C",
+      "slot_number": "05",
+      "status": "available",
+      "instructions": [
+        "Take elevator to B1",
+        "Follow Green arrows",
+        "Slot is opposite the exit"
+      ]
+    },
+    {
+      "id": "01",
+      "floor": "A",
+      "zone": "General",
+      "slot_number": "01",
+      "status": "available",
+      "instructions": []
+    },
+    {
+      "id": "02",
+      "floor": "A",
+      "zone": "General",
+      "slot_number": "02",
+      "status": "available",
+      "instructions": []
+    },
+    {
+      "id": "03",
+      "floor": "A",
+      "zone": "General",
+      "slot_number": "03",
+      "status": "occupied",
+      "instructions": []
+    },
+    {
+      "id": "04",
+      "floor": "A",
+      "zone": "General",
+      "slot_number": "04",
+      "status": "available",
+      "instructions": []
+    },
+    {
+      "id": "05",
+      "floor": "A",
+      "zone": "General",
+      "slot_number": "05",
+      "status": "available",
+      "instructions": []
+    },
+    {
+      "id": "06",
+      "floor": "A",
+      "zone": "General",
+      "slot_number": "06",
+      "status": "occupied",
+      "instructions": []
+    },
+    {
+      "id": "07",
+      "floor": "A",
+      "zone": "General",
+      "slot_number": "07",
+      "status": "available",
+      "instructions": []
+    },
+    {
+      "id": "08",
+      "floor": "A",
+      "zone": "General",
+      "slot_number": "08",
+      "status": "occupied",
+      "instructions": []
+    },
+    {
+      "id": "09",
+      "floor": "A",
+      "zone": "General",
+      "slot_number": "09",
+      "status": "available",
+      "instructions": []
+    },
+    {
+      "id": "10",
+      "floor": "A",
+      "zone": "General",
+      "slot_number": "10",
+      "status": "available",
+      "instructions": []
+    },
+    {
+      "id": "11",
+      "floor": "A",
+      "zone": "General",
+      "slot_number": "11",
+      "status": "occupied",
+      "instructions": []
+    },
+    {
+      "id": "12",
+      "floor": "A",
+      "zone": "General",
+      "slot_number": "12",
+      "status": "available",
+      "instructions": []
+    }
+  ],
+  "reports": [
+    {
+      "id": 101,
+      "item": "Keys with blue lanyard",
+      "location": "Zone A Elevator",
+      "status": "Pending Verification",
+      "reporter": "+15550001234"
+    },
+    {
+      "id": 102,
+      "item": "Black Leather Wallet",
+      "location": "Level B2",
+      "status": "New",
+      "reporter": "guest@gmail.com"
+    }
+  ]
+}

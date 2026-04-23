@@ -1,0 +1,227 @@
+{
+  "users": [
+    {
+      "id": "u1",
+      "identifier": "guest@gmail.com",
+      "name": "Guest User",
+      "role": "user",
+      "created_at": "2026-04-23T12:20:11.220Z"
+    },
+    {
+      "id": "u2",
+      "identifier": "+15550000000",
+      "name": "Mobile User",
+      "role": "user",
+      "created_at": "2026-04-23T12:20:11.221Z"
+    },
+    {
+      "id": "a1",
+      "identifier": "admin",
+      "name": "Facility Manager",
+      "role": "admin",
+      "created_at": "2026-04-23T12:20:11.221Z"
+    }
+  ],
+  "parking_slots": [
+    {
+      "id": "B2-A12",
+      "floor": "B2",
+      "zone": "A",
+      "slot_number": "12",
+      "status": "available",
+      "instructions": "[\"Head straight 50m\",\"Turn left at Blue pillar\",\"Slot is on the right\"]",
+      "vehicle_id": null,
+      "user_id": null,
+      "occupied_at": null,
+      "last_updated": "2026-04-23T12:20:11.221Z"
+    },
+    {
+      "id": "B1-C05",
+      "floor": "B1",
+      "zone": "C",
+      "slot_number": "05",
+      "status": "available",
+      "instructions": "[\"Take elevator to B1\",\"Follow Green arrows\",\"Slot is opposite the exit\"]",
+      "vehicle_id": null,
+      "user_id": null,
+      "occupied_at": null,
+      "last_updated": "2026-04-23T12:20:11.221Z"
+    },
+    {
+      "id": "01",
+      "floor": "A",
+      "zone": "General",
+      "slot_number": "01",
+      "status": "available",
+      "instructions": "[]",
+      "vehicle_id": null,
+      "user_id": null,
+      "occupied_at": null,
+      "last_updated": "2026-04-23T12:20:11.221Z"
+    },
+    {
+      "id": "02",
+      "floor": "A",
+      "zone": "General",
+      "slot_number": "02",
+      "status": "available",
+      "instructions": "[]",
+      "vehicle_id": null,
+      "user_id": null,
+      "occupied_at": null,
+      "last_updated": "2026-04-23T12:20:11.221Z"
+    },
+    {
+      "id": "03",
+      "floor": "A",
+      "zone": "General",
+      "slot_number": "03",
+      "status": "occupied",
+      "instructions": "[]",
+      "vehicle_id": null,
+      "user_id": null,
+      "occupied_at": "2026-04-23T12:20:11.221Z",
+      "last_updated": "2026-04-23T12:20:11.221Z"
+    },
+    {
+      "id": "04",
+      "floor": "A",
+      "zone": "General",
+      "slot_number": "04",
+      "status": "available",
+      "instructions": "[]",
+      "vehicle_id": null,
+      "user_id": null,
+      "occupied_at": null,
+      "last_updated": "2026-04-23T12:20:11.221Z"
+    },
+    {
+      "id": "05",
+      "floor": "A",
+      "zone": "General",
+      "slot_number": "05",
+      "status": "available",
+      "instructions": "[]",
+      "vehicle_id": null,
+      "user_id": null,
+      "occupied_at": null,
+      "last_updated": "2026-04-23T12:20:11.221Z"
+    },
+    {
+      "id": "06",
+      "floor": "A",
+      "zone": "General",
+      "slot_number": "06",
+      "status": "occupied",
+      "instructions": "[]",
+      "vehicle_id": null,
+      "user_id": null,
+      "occupied_at": "2026-04-23T12:20:11.221Z",
+      "last_updated": "2026-04-23T12:20:11.221Z"
+    },
+    {
+      "id": "07",
+      "floor": "A",
+      "zone": "General",
+      "slot_number": "07",
+      "status": "available",
+      "instructions": "[]",
+      "vehicle_id": null,
+      "user_id": null,
+      "occupied_at": null,
+      "last_updated": "2026-04-23T12:20:11.221Z"
+    },
+    {
+      "id": "08",
+      "floor": "A",
+      "zone": "General",
+      "slot_number": "08",
+      "status": "occupied",
+      "instructions": "[]",
+      "vehicle_id": null,
+      "user_id": null,
+      "occupied_at": "2026-04-23T12:20:11.221Z",
+      "last_updated": "2026-04-23T12:20:11.221Z"
+    },
+    {
+      "id": "09",
+      "floor": "A",
+      "zone": "General",
+      "slot_number": "09",
+      "status": "available",
+      "instructions": "[]",
+      "vehicle_id": null,
+      "user_id": null,
+      "occupied_at": null,
+      "last_updated": "2026-04-23T12:20:11.221Z"
+    },
+    {
+      "id": "10",
+      "floor": "A",
+      "zone": "General",
+      "slot_number": "10",
+      "status": "available",
+      "instructions": "[]",
+      "vehicle_id": null,
+      "user_id": null,
+      "occupied_at": null,
+      "last_updated": "2026-04-23T12:20:11.221Z"
+    },
+    {
+      "id": "11",
+      "floor": "A",
+      "zone": "General",
+      "slot_number": "11",
+      "status": "occupied",
+      "instructions": "[]",
+      "vehicle_id": null,
+      "user_id": null,
+      "occupied_at": "2026-04-23T12:20:11.221Z",
+      "last_updated": "2026-04-23T12:20:11.221Z"
+    },
+    {
+      "id": "12",
+      "floor": "A",
+      "zone": "General",
+      "slot_number": "12",
+      "status": "available",
+      "instructions": "[]",
+      "vehicle_id": null,
+      "user_id": null,
+      "occupied_at": null,
+      "last_updated": "2026-04-23T12:20:11.221Z"
+    }
+  ],
+  "vehicles": [],
+  "lost_found_reports": [
+    {
+      "id": 101,
+      "item": "Keys with blue lanyard",
+      "location": "Zone A Elevator",
+      "description": null,
+      "status": "Pending Verification",
+      "reporter_id": null,
+      "reporter_contact": "+15550001234",
+      "found_by": null,
+      "resolved_by": null,
+      "created_at": "2026-04-23T12:20:11.221Z",
+      "updated_at": "2026-04-23T12:20:11.221Z",
+      "resolved_at": null
+    },
+    {
+      "id": 102,
+      "item": "Black Leather Wallet",
+      "location": "Level B2",
+      "description": null,
+      "status": "New",
+      "reporter_id": null,
+      "reporter_contact": "guest@gmail.com",
+      "found_by": null,
+      "resolved_by": null,
+      "created_at": "2026-04-23T12:20:11.221Z",
+      "updated_at": "2026-04-23T12:20:11.221Z",
+      "resolved_at": null
+    }
+  ],
+  "parking_sessions": []
+}
