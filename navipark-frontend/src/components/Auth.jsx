@@ -20,7 +20,13 @@ const Auth = () => {
         identifier = 'admin';
       }
       
+      // DEBUG: Log the request details
+      console.log('Login attempt:', { identifier, method, role: role === 'admin' ? 'admin' : null });
+      
       const user = await authAPI.login(identifier, method, role === 'admin' ? 'admin' : null);
+      
+      // DEBUG: Log the response
+      console.log('Login response:', user);
       
       setCurrentUser(user);
       setUserRole(user.role || role);

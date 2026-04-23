@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # NaviPark Smart Parking System
 
 A full-stack smart parking management application with real-time parking slot tracking, vehicle location services, and lost & found reporting.
@@ -148,3 +149,7 @@ npm start
 ---
 
 Built with ❤️ using React, Vite, Node.js, and Express
+=======
+# NaviPark
+Design for Real-World Parking &amp; Public Interaction Systems
+>>>>>>> b774da8149a8f7626415d7e0f7ce84afa64575cd

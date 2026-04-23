@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import { Activity, ShieldCheck, Map, Settings2 } from 'lucide-react';
+import { Activity, ShieldCheck, Map, Settings2, Car } from 'lucide-react';
+import AdminVehicleManagement from './AdminVehicleManagement';
 
 const mockReports = [
   { id: 101, item: 'Keys with blue lanyard', status: 'Pending Verification', user: '+15550001234' },
@@ -8,6 +9,7 @@ const mockReports = [
 
 const AdminDashboard = () => {
   const [reports, setReports] = useState(mockReports);
+  const [currentView, setCurrentView] = useState('dashboard'); // 'dashboard' or 'vehicle-management'
 
   const resolveReport = (id) => {
     setReports(reports.map(r => r.id === id ? { ...r, status: 'Resolved' } : r));
@@ -21,8 +23,38 @@ const AdminDashboard = () => {
           <h2 className="text-xl font-bold text-purple-700 dark:text-purple-400">Admin Control Center</h2>
         </div>
         <p className="text-sm text-slate-600 dark:text-slate-400">You have elevated privileges. Actions taken here affect the live facility.</p>
+        
+        {/* Navigation Buttons */}
+        <div className="flex gap-2 mt-4">
+          <button
+            onClick={() => setCurrentView('dashboard')}
+            className={`flex-1 py-2 px-4 rounded-lg text-sm font-medium transition-colors ${
+              currentView === 'dashboard'
+                ? 'bg-purple-500 text-white'
+                : 'bg-slate-100 text-slate-700 hover:bg-slate-200 dark:bg-slate-800 dark:text-slate-300'
+            }`}
+          >
+            Dashboard
+          </button>
+          <button
+            onClick={() => setCurrentView('vehicle-management')}
+            className={`flex-1 py-2 px-4 rounded-lg text-sm font-medium transition-colors flex items-center justify-center gap-2 ${
+              currentView === 'vehicle-management'
+                ? 'bg-purple-500 text-white'
+                : 'bg-slate-100 text-slate-700 hover:bg-slate-200 dark:bg-slate-800 dark:text-slate-300'
+            }`}
+          >
+            <Car size={16} />
+            Vehicle Management
+          </button>
+        </div>
       </div>
 
+      {/* Conditional Rendering */}
+      {currentView === 'vehicle-management' ? (
+        <AdminVehicleManagement />
+      ) : (
+        <>
       <section>
         <h3 className="text-lg font-semibold mb-3 flex items-center gap-2">
           <Activity size={20} className="text-primary-light dark:text-primary-dark" />
@@ -56,6 +88,7 @@ const AdminDashboard = () => {
         </div>
       </section>
 
+      
       <section className="card border-red-500/20">
         <h3 className="text-lg font-semibold mb-4">Active Lost & Found Reports</h3>
         <div className="space-y-3">
@@ -80,6 +113,8 @@ const AdminDashboard = () => {
           ))}
         </div>
       </section>
+        </>
+      )}
     </div>
   );
 };

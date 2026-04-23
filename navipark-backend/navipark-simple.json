@@ -20,6 +20,14 @@
       "name": "Facility Manager",
       "role": "admin",
       "created_at": "2026-04-23T12:20:11.221Z"
+    },
+    {
+      "id": "nxy5h4et7",
+      "identifier": "test@gmail.com",
+      "name": "Google User",
+      "role": "user",
+      "created_at": "2026-04-23T20:48:57.537Z",
+      "updated_at": "2026-04-23T20:48:57.538Z"
     }
   ],
   "parking_slots": [

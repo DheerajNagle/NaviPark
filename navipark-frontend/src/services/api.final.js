@@ -1,6 +1,7 @@
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:3000/api';
+// API Configuration using environment variables
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || '/api';
 
-// Generic API request function
+// Generic API request function with enhanced error handling
 const apiRequest = async (endpoint, options = {}) => {
   const url = `${API_BASE_URL}${endpoint}`;
   const config = {
@@ -13,12 +14,8 @@ const apiRequest = async (endpoint, options = {}) => {
 
   try {
     console.log(`API Request: ${config.method || 'GET'} ${url}`);
-    console.log('Request config:', config);
     
     const response = await fetch(url, config);
-    
-    console.log('Response status:', response.status);
-    console.log('Response headers:', response.headers);
     
     if (!response.ok) {
       const errorData = await response.json().catch(() => ({}));
@@ -31,7 +28,6 @@ const apiRequest = async (endpoint, options = {}) => {
     return data;
   } catch (error) {
     console.error(`API Error (${endpoint}):`, error);
-    console.error('Full error details:', error);
     throw error;
   }
 };
@@ -72,7 +68,7 @@ export const parkingAPI = {
   },
 };
 
-// Vehicles API
+// Vehicles API - PRODUCTION READY
 export const vehiclesAPI = {
   getVehicles: async (filters = {}) => {
     const params = new URLSearchParams(filters);
@@ -81,6 +77,7 @@ export const vehiclesAPI = {
   },
   
   createVehicle: async (vehicleData) => {
+    // Uses Vite proxy to route to backend on port 5000
     return await apiRequest('/vehicles/add', {
       method: 'POST',
       body: JSON.stringify(vehicleData),
